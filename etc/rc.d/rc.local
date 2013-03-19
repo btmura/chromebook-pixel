@@ -9,6 +9,9 @@
 
 loadkeys dvorak
 
+# Mouse didn't work in 3.9-rc2 unless the module was reinserted.
 rmmod chromeos_laptop
 modprobe chromeos_laptop
+
+# Makes first suspend fail instead of crashing.
 modprobe tpm_tis force=1 interrupts=0

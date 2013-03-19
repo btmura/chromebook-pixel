@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SYSFILE=/sys/class/backlight/intel_backlight/brightness
+
+case $1 in
+  resume)
+    # Tickle the backlight by writing the existing value back to it.
+    echo $(cat $SYSFILE) > $SYSFILE
+    ;;
+esac
+
