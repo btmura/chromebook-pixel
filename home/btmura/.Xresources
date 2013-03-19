@@ -1,0 +1,10 @@
+*customization: -color
+xterm*termName: xterm-256color
+
+xterm*background: #000000
+xterm*foreground: #a8a8a8
+
+xterm*faceName: Inconsolata
+xterm*faceSize: 8
+
+

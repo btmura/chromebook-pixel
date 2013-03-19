@@ -1,0 +1,7 @@
+[user]
+	email = btmura@gmail.com
+	name = Brian Muramatsu
+[color]
+	ui = auto
+[core]
+	editor = vim

@@ -1,0 +1,34 @@
+#!/bin/sh
+
+userresources=$HOME/.Xresources
+usermodmap=$HOME/.Xmodmap
+sysresources=/etc/X11/xinit/.Xresources
+sysmodmap=/etc/X11/xinit/.Xmodmap
+
+if [ -f $sysresources ]; then
+    /usr/bin/xrdb -merge $sysresources
+fi
+
+if [ -f $sysmodmap ]; then
+    /usr/bin/xmodmap $sysmodmap
+fi
+
+if [ -f $userresources ]; then
+    /usr/bin/xrdb -merge $userresources
+fi
+
+if [ -f $usermodmap ]; then
+    /usr/bin/xmodmap $usermodmap
+fi
+
+setxkbmap dvorak
+syndaemon -i 1 -K -d
+xbacklight -set 50
+xrandr --dpi 239
+
+while true; do
+  xsetroot -name "$(battery) $(date +"%D %I:%M %p")"
+  sleep 1m
+done &
+
+exec $HOME/bin/dwm 
