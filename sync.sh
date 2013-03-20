@@ -17,9 +17,11 @@ sync $HOME/.vimrc
 sync $HOME/.xinitrc
 sync $HOME/.zshrc
 sync $HOME/work/dwm-6.0/config.h
+sync /etc/dhcpcd.conf
 sync /etc/lilo.conf
 sync /etc/pm/sleep.d/00-backlight
 sync /etc/rc.d/rc.local
 sync /etc/termcap
-sync /etc/X11/xorg.conf.d/50-synaptics.conf
 sync /etc/udev/rules.d/51-android.rules
+sync /etc/X11/xorg.conf.d/50-synaptics.conf
+

@@ -1,5 +1,5 @@
 [[ "$ORIGPATH" == "" ]] && ORIGPATH=$PATH
-PATH=~/bin:~/work/android-sdk-linux/platform-tools:~/work/android-sdk-linux/tools:/usr/lib64/java/bin:$ORIGPATH
+PATH=~/bin:~/work/android-sdk-linux/platform-tools:~/work/android-sdk-linux/tools:~/opt/eclipse:/usr/lib64/java/bin:$ORIGPATH
 
 tm() {
   if [[ "$1" = "" ]]; then
