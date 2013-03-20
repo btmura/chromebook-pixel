@@ -24,7 +24,7 @@ fi
 setxkbmap dvorak
 syndaemon -i 1 -K -d
 xbacklight -set 50
-xrandr --dpi 239
+xrandr --dpi 168
 
 while true; do
   xsetroot -name "$(battery) $(date +"%D %I:%M %p")"
