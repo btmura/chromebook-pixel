@@ -5,5 +5,4 @@ xterm*background: #000000
 xterm*foreground: #a8a8a8
 
 xterm*faceName: Inconsolata
-xterm*faceSize: 8 
-
+xterm*faceSize: 8
