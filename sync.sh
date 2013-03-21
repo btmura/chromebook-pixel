@@ -21,7 +21,7 @@ sync /etc/dhcpcd.conf
 sync /etc/lilo.conf
 sync /etc/pm/sleep.d/00-backlight
 sync /etc/rc.d/rc.local
+sync /etc/slackpkg/blacklist
 sync /etc/termcap
 sync /etc/udev/rules.d/51-android.rules
 sync /etc/X11/xorg.conf.d/50-synaptics.conf
-
