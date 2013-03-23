@@ -18,8 +18,10 @@ sync $HOME/.vimrc
 sync $HOME/.xinitrc
 sync $HOME/.zshrc
 sync $HOME/work/dwm-6.0/config.h
+sync /etc/acpi/acpi_handler.sh
 sync /etc/dhcpcd.conf
 sync /etc/lilo.conf
+sync /etc/pm/config.d/config
 sync /etc/pm/sleep.d/00-backlight
 sync /etc/rc.d/rc.local
 sync /etc/slackpkg/blacklist
