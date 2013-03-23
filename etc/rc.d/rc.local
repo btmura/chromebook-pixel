@@ -7,8 +7,6 @@
 # make an /etc/rc.d/rc.local_shutdown script and put those
 # commands in there.
 
-loadkeys dvorak
-
 # Mouse didn't work in 3.9-rc2 unless the module was reinserted.
 rmmod chromeos_laptop
 modprobe chromeos_laptop
