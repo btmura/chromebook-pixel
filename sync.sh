@@ -10,6 +10,7 @@ sync() {
   fi
 }
 
+sync $HOME/bin/battery
 sync $HOME/.Xresources
 sync $HOME/.gitconfig
 sync $HOME/.tmux.conf

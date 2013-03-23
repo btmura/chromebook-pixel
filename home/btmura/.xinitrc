@@ -27,7 +27,7 @@ xbacklight -set 50
 xrandr --dpi 239
 
 while true; do
-  xsetroot -name "$(battery) $(date +"%D %I:%M %p")"
+  xsetroot -name "$(battery)  $(date +"%D %I:%M %p")"
   sleep 1m
 done &
 
