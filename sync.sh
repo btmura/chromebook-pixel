@@ -29,4 +29,5 @@ sync /etc/rc.d/rc.local
 sync /etc/slackpkg/blacklist
 sync /etc/termcap
 sync /etc/udev/rules.d/51-android.rules
+sync /etc/X11/xorg.conf.d/10-keyboard.conf
 sync /etc/X11/xorg.conf.d/50-synaptics.conf

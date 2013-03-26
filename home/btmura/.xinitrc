@@ -21,7 +21,6 @@ if [ -f $usermodmap ]; then
     /usr/bin/xmodmap $usermodmap
 fi
 
-setxkbmap dvorak
 syndaemon -i 1 -K -d
 xbacklight -set 50
 xrandr --dpi 239
