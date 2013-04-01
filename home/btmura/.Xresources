@@ -6,3 +6,9 @@ xterm*foreground: #a8a8a8
 
 xterm*faceName: Inconsolata
 xterm*faceSize: 8
+
+xterm*pointerMode: 0
+
+Xcursor.theme: Oxygen_White
+Xcursor.size: 48
+
