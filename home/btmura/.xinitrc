@@ -21,8 +21,8 @@ if [ -f $usermodmap ]; then
     /usr/bin/xmodmap $usermodmap
 fi
 
-syndaemon -i 1 -K -d
-xbacklight -set 50
+syndaemon -i 0.5 -d
+xbacklight -set 25
 xrandr --dpi 239
 
 while true; do
