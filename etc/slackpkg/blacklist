@@ -15,12 +15,12 @@
 # below 
 #
 kernel-firmware
-kernel-generic
-kernel-generic-smp
+#kernel-generic
+#kernel-generic-smp
 kernel-headers
-kernel-huge
+#kernel-huge
 kernel-huge-smp
-kernel-modules
+#kernel-modules
 kernel-modules-smp
 kernel-source
 
