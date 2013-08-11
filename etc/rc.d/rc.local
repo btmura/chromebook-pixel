@@ -7,9 +7,7 @@
 # make an /etc/rc.d/rc.local_shutdown script and put those
 # commands in there.
 
-# Mouse didn't work in 3.9-rc2 unless the module was reinserted.
+# 8/11/13 - Reinsert module to get the mouse working. 
 rmmod chromeos_laptop
 modprobe chromeos_laptop
 
-# Makes first suspend fail instead of crashing.
-modprobe tpm_tis force=1 interrupts=0
