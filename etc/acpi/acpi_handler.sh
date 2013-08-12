@@ -8,7 +8,7 @@ case "$1" in
   button)
     case "$2" in
       power) # /sbin/init 0
-	 /usr/sbin/pm-suspend-hybrid
+         /usr/sbin/pm-suspend-hybrid
          ;;
       *) logger "ACPI action $2 is not defined"
          ;;

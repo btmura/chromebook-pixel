@@ -11,3 +11,6 @@
 rmmod chromeos_laptop
 modprobe chromeos_laptop
 
+# Fixes various suspend/resume issues
+modprobe tpm_tis force=1 interrupts=0
+
