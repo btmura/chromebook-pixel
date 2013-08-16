@@ -17,7 +17,8 @@ sync $HOME/.tmux.conf
 sync $HOME/.vimrc
 sync $HOME/.xinitrc
 sync $HOME/.zshrc
-sync $HOME/work/dwm-6.0/config.h
+sync $HOME/work/src/dwm-6.0/config.h
+sync $HOME/work/src/st-0.4.1/config.h
 sync /etc/acpi/acpi_handler.sh
 sync /etc/lilo.conf
 sync /etc/pm/config.d/config
