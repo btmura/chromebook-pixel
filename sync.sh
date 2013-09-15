@@ -15,6 +15,7 @@ sync $HOME/.Xresources
 sync $HOME/.gitconfig
 sync $HOME/.tmux.conf
 sync $HOME/.vimrc
+sync $HOME/.xbindkeysrc
 sync $HOME/.xinitrc
 sync $HOME/.zshrc
 sync $HOME/work/src/dwm-6.0/config.h
