@@ -24,6 +24,7 @@ fi
 syndaemon -i 0.5 -d
 xbacklight -set 25
 xrandr --dpi 239
+xbindkeys
 
 while true; do
   xsetroot -name "$(battery)  $(date +"%D %I:%M %p")"
