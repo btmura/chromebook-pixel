@@ -1,3 +1,4 @@
-- slackware64-current synced on 3/17/2013
+- slackware64 14.1 
 - Add multilib support to run adb: http://slackware.com/~alien/multilib/
 - Use gtk-chtheme to set the system font to a small size, so that Eclipse text looks normal.
+- xbindkeys compiled with --disable-guile
