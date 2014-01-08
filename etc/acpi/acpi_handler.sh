@@ -7,11 +7,14 @@ set $@
 case "$1" in
   button)
     case "$2" in
-      power) # /sbin/init 0
-         /usr/sbin/pm-suspend-hybrid
-         ;;
-      *) logger "ACPI action $2 is not defined"
-         ;;
+      power)
+        /usr/sbin/pm-suspend
+        ;;
+      lid) grep -q open /proc/acpi/button/lid/LID0/state || /usr/sbin/pm-suspend
+        ;;
+      *)
+        logger "ACPI action $2 is not defined"
+        ;;
     esac
     ;;
   *)
