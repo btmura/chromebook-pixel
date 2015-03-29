@@ -10,7 +10,6 @@ sync() {
   fi
 }
 
-sync $HOME/bin/battery
 sync $HOME/.Xresources
 sync $HOME/.gitconfig
 sync $HOME/.tmux.conf
@@ -18,8 +17,9 @@ sync $HOME/.vimrc
 sync $HOME/.xbindkeysrc
 sync $HOME/.xinitrc
 sync $HOME/.zshrc
-sync $HOME/work/src/dwm-6.0/config.h
-sync $HOME/work/src/st-0.4.1/config.h
+sync $HOME/opt/bin/battery
+sync $HOME/opt/src/dwm-6.0/config.h
+sync $HOME/opt/src/st-0.4.1/config.h
 sync /etc/acpi/acpi_handler.sh
 sync /etc/lilo.conf
 sync /etc/pm/config.d/config

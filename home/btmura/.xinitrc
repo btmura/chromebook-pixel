@@ -25,10 +25,14 @@ syndaemon -i 0.5 -d
 xbacklight -set 25
 xrandr --dpi 239
 xbindkeys
+xpmroot $HOME/work/graphics/pixel-wallpaper.xpm
+
+# Workaround for Android Studio
+wmname LG3D
 
 while true; do
   xsetroot -name "$(battery)  $(date +"%D %I:%M %p")"
   sleep 1m
 done &
 
-exec $HOME/bin/dwm 
+exec dwm 
