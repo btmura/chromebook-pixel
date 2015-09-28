@@ -46,15 +46,15 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "xterm", NULL };
 
 static Key keys[] = {
   /* modifier                     key        function        argument */
   { MODKEY,                       XK_F6,     spawn,          SHCMD("xbacklight -dec 10") },
   { MODKEY,                       XK_F7,     spawn,          SHCMD("xbacklight -inc 10") },
   { MODKEY,                       XK_F8,     spawn,          SHCMD("amixer -q set Master toggle") },
-  { MODKEY,                       XK_F9,     spawn,          SHCMD("amixer -q set Master unmute && amixer -q set Master 15%-") },
-  { MODKEY,                       XK_F10,    spawn,          SHCMD("amixer -q set Master unmute && amixer -q set Master 15%+") },
+  { MODKEY,                       XK_F9,     spawn,          SHCMD("amixer -q set PCM 15%-") },
+  { MODKEY,                       XK_F10,    spawn,          SHCMD("amixer -q set PCM 15%+") },
   { MODKEY,                       XK_l,      spawn,          {.v = dmenucmd } },
   { MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
   { MODKEY,                       XK_x,      togglebar,      {0} },

@@ -12,6 +12,7 @@ setopt inc_append_history
 setopt share_history
 
 alias gaa='git add -A'
+alias gac='gaa && gc'
 alias gai='git add -i'
 alias gb='git branch'
 alias gc='git commit'
@@ -24,18 +25,24 @@ alias gs='git status'
 
 alias e='exit'
 alias ll='ls -lh'
+alias tmd='tmux detach'
 alias z='source ~/.zshrc'
 alias ze='vim ~/.zshrc'
+
+export GOROOT=$HOME/opt/go
+export GOPATH=$HOME/work/go
 
 [[ "$ORIGPATH" == "" ]] && ORIGPATH=$PATH
 PATH=\
 ~/.cabal/bin:\
 ~/opt/android-sdk/platform-tools:\
 ~/opt/android-sdk/tools:\
-~/opt/bin:\
 ~/opt/dart/dart-sdk/bin:\
 ~/opt/go_appengine:\
 ~/opt/haskell-platform/bin:\
+$GOROOT/bin:\
+$GOPATH/bin:\
+~/opt/bin:\
 /usr/lib64/java/bin:\
 $ORIGPATH
 
