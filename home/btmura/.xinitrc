@@ -25,7 +25,7 @@ syndaemon -i 0.5 -d
 xbacklight -set 25
 xrandr --dpi 239
 xbindkeys
-xpmroot $HOME/work/graphics/pixel-wallpaper.xpm
+xpmroot $HOME/.wallpaper.xpm
 
 # Workaround for Android Studio
 wmname LG3D

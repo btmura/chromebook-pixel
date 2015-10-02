@@ -46,10 +46,12 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "xterm", NULL };
+static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
   /* modifier                     key        function        argument */
+  { MODKEY|ShiftMask,             XK_g,      spawn,          SHCMD("google-chrome-stable `xclip -o`") },
+  { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("st3 `xclip -o`") },
   { MODKEY,                       XK_F6,     spawn,          SHCMD("xbacklight -dec 10") },
   { MODKEY,                       XK_F7,     spawn,          SHCMD("xbacklight -inc 10") },
   { MODKEY,                       XK_F8,     spawn,          SHCMD("amixer -q set Master toggle") },
