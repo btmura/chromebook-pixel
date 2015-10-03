@@ -32,19 +32,11 @@ alias ze='vim ~/.zshrc'
 export GOROOT=$HOME/opt/go
 export GOPATH=$HOME/work/go
 
-[[ "$ORIGPATH" == "" ]] && ORIGPATH=$PATH
-PATH=\
-~/.cabal/bin:\
-~/opt/android-sdk/platform-tools:\
-~/opt/android-sdk/tools:\
-~/opt/dart/dart-sdk/bin:\
-~/opt/go_appengine:\
-~/opt/haskell-platform/bin:\
-$GOROOT/bin:\
-$GOPATH/bin:\
-~/opt/bin:\
-/usr/lib64/java/bin:\
-$ORIGPATH
+if [[ "$ORIGPATH" == "" ]]
+then
+  export ORIGPATH=$PATH
+  export PATH=~/opt/android-sdk/platform-tools:~/opt/android-sdk/tools:~/opt/go_appengine:$GOROOT/bin:$GOPATH/bin:~/opt/bin:$ORIGPATH
+fi
 
 tm() {
   if [[ "$1" = "" ]]; then
